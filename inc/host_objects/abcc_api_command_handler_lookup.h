@@ -974,7 +974,6 @@
 #define ABCC_OPCUA_OBJ_PRODUCT_URI_GET_CBFUNC   { .bObject = ABP_OBJ_NUM_OPCUA, .bInstance = 0x01, .uCmdExt.bAttr = ABP_OPCUA_IA_LIMITS, .bCommand = ABP_CMD_GET_ATTR, .eServiceTag = SERVICE_BUFFER, .uAttrLength.iDataSize = ABP_OPCUA_IA_LIMITS_DS, .uCbx.pnGetArrAttr = ABCC_CbfOPCUAObjLimits_Get }
 
 /* Attribute 8: Application models */
-#define ABCC_OPCUA_OBJ_APPL_MODELS_GET_VALUE(x) { .bObject = ABP_OBJ_NUM_OPCUA, .bInstance = 0x01, .uCmdExt.bAttr = ABP_OPCUA_IA_APPLICATION_MODELS, .bCommand = ABP_CMD_GET_ATTR, .eServiceTag = SERVICE_BUFFER, .uData.pacStringBuffer = (x), .uAttrLength.iMaxDataSize = ABP_OPCUA_IA_APPLICATION_MODELS_MAX_DS }
 #define ABCC_OPCUA_OBJ_PRODUCT_URI_GET_CBFUNC   { .bObject = ABP_OBJ_NUM_OPCUA, .bInstance = 0x01, .uCmdExt.bAttr = ABP_OPCUA_IA_APPLICATION_MODELS, .bCommand = ABP_CMD_GET_ATTR, .eServiceTag = SERVICE_BUFFER, .uAttrLength.iMaxDataSize = ABP_OPCUA_IA_APPLICATION_MODELS_MAX_DS, .uCbx.pnGetArrAttr = ABCC_CbfOPCUAObjApplicationModels_Get }
 
 /* Attribute 9: Status */
